@@ -1,17 +1,16 @@
 from fastapi import FastAPI
-from app.database.database import engine
-from app.database import models
-from app.routers import products
 
-# Cria todas as tabelas
-models.Base.metadata.create_all(bind=engine)
+from app.database.database import Base, engine
+from app.routers.product import router as product_router
+from app.routers.raw_material import router as raw_material_router
+from app.routers.product_raw_material import router as product_raw_material_router
 
-app = FastAPI(title="Autoflex Inventory API", version="0.1.0")
+Base.metadata.create_all(bind=engine)
 
-# Incluindo router de produtos
-app.include_router(products.router)
+app = FastAPI(title="Autoflex Inventory System")
 
-@app.get("/")
-def root():
-    return {"message": "API is running"}
+app.include_router(product_router)
+app.include_router(raw_material_router)
+app.include_router(product_raw_material_router)
+
 

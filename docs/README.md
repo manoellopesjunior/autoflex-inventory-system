@@ -103,6 +103,58 @@ Uso de framework no backend
 
 Validação de dados com schemas
 
+📄 PROGRESS.md — Registro de Progresso do Projeto
+Etapas de Desenvolvimento
+
+Etapa 1 – Estrutura Inicial
+
+Criação do projeto
+
+Configuração do ambiente virtual
+
+Estrutura base do FastAPI
+
+Etapa 2 – Definição da Arquitetura
+
+Separação em camadas (routers, models, schemas e CRUD)
+
+Configuração do banco de dados
+
+Etapa 3 – CRUD de Produtos
+
+Criação, listagem e exclusão de produtos
+
+Validação e testes via Swagger
+
+Etapa 4 – CRUD de Matérias-Primas
+
+Cadastro, listagem e exclusão de matérias-primas
+
+Validação de dados de entrada
+
+Etapa 5 – Associação Produto x Matéria-Prima
+
+Criação e atualização do vínculo
+
+Definição de quantidade necessária por produto
+
+Exclusão de associações
+
+Etapa 6 – Testes Manuais
+
+Testes completos via Swagger UI
+
+Validação de todos os endpoints
+
+Etapa 7 – Documentação Final
+
+Criação do README principal
+
+Registro de progresso do projeto
+
+Preparação para entrega e avaliação técnica
+
 Código, variáveis e endpoints em inglês
 
 Estrutura preparada para escalabilidade e integração com frontend
+

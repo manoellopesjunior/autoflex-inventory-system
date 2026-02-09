@@ -103,7 +103,8 @@ Uso de framework no backend
 
 Validação de dados com schemas
 
-📄 PROGRESS.md — Registro de Progresso do Projeto
+Registro de Progresso do Projeto
+
 Etapas de Desenvolvimento
 
 Etapa 1 – Estrutura Inicial
@@ -157,4 +158,5 @@ Preparação para entrega e avaliação técnica
 Código, variáveis e endpoints em inglês
 
 Estrutura preparada para escalabilidade e integração com frontend
+
 

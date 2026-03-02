@@ -37,7 +37,7 @@ def update_product(product_id: int, product: ProductUpdate, db: Session = Depend
     return updated
 
 
-@router.delete("/{product_id}")
+@router.delete("/{product_id}", status_code=204)
 def delete_product(product_id: int, db: Session = Depends(get_db)):
     deleted = crud.delete_product(db, product_id)
     if not deleted:

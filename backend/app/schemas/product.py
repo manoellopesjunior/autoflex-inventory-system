@@ -1,9 +1,9 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class ProductBase(BaseModel):
-    name: str
-    price: float
+    name: str = Field(..., min_length=2, max_length=100)
+    price: float = Field(..., gt=0)
 
 
 class ProductCreate(ProductBase):
@@ -11,8 +11,8 @@ class ProductCreate(ProductBase):
 
 
 class ProductUpdate(BaseModel):
-    name: str | None = None
-    price: float | None = None
+    name: str | None = Field(default=None, min_length=2, max_length=100)
+    price: float | None = Field(default=None, gt=0)
 
 
 class ProductOut(ProductBase):

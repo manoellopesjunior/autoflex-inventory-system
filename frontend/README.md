@@ -77,7 +77,7 @@ http://localhost:5173
 
 📸 Imagens / Layout
 
-Adicione aqui screenshots ou GIFs do frontend depois de rodar o projeto localmente.
+Adicione ![Autoflex Dashboard](assets/screenshot.png)
 
 📝 Registro de Progresso
 
